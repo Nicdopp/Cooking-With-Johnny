@@ -6,7 +6,7 @@ public class Geral : MonoBehaviour
 
     internal int placarJogadorNum, recordeNum;
     public Text placarJogadorTexto, recordeTexto;
-    public AudioSource somPontoGanho, somPontoPerdido;
+    public AudioSource somPontoGanho;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
