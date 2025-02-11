@@ -18,24 +18,24 @@ public class ControladorJogador : MonoBehaviour
     {
         float altX, altY;
 
-        // Cima e Baixo:
-        if (Input.GetKey(KeyCode.UpArrow))
+        // Cima e Baixo: (Posição Y)
+        if (Input.GetKey(KeyCode.UpArrow) && transform.position.y < 468)
         {
             altY = 60 * Time.deltaTime * taxaMovimentacao;
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow) && transform.position.y > 32)
         {
             altY = -60 * Time.deltaTime * taxaMovimentacao;
         }
         else altY = 0;
 
-        // Lado Esquerdo e Direito:
+        // Lado Esquerdo e Direito: (Posição X)
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) && transform.position.x > 32)
         {
             altX = -60 * Time.deltaTime * taxaMovimentacao;
         }
-        else if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow) && transform.position.x < 928)
         {
             altX = 60 * Time.deltaTime * taxaMovimentacao;
         }
