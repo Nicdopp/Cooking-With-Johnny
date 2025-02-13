@@ -73,7 +73,7 @@ public class ControladorJogador : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "Laranja")
+        if (collision.name == "Comida")
         {
             JuizDoJogo.MarcarPonto();
 
